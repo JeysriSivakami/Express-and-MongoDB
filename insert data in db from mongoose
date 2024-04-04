@@ -1,0 +1,31 @@
+const refugees = [
+    { 
+      id: 1,
+      name: 'Subramani',
+      dob: new Date('1985-05-15'),
+      phoneNo: 9876543210,
+      campNo: 1,
+      district: 'Thoothukudi'
+    },
+    { 
+      id: 2,
+      name: 'Senthil',
+      dob: new Date('1988-07-20'),
+      phoneNo: 8765432109,
+      campNo: 1,
+      district: 'Thoothukudi'
+    },
+    { 
+      id: 3,
+      name: 'Kathir',
+      dob: new Date('1983-10-25'),
+      phoneNo: 7654321098,
+      campNo: 2,
+      district: 'Thoothukudi'
+    }
+  ];
+  
+  const result = await Refugee.insertMany(refugees);
+  console.log(result.length + " document(s) inserted");
+
+  console.log(result);
